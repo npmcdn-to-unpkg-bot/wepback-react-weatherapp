@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Property Grid</title>
+    <!-- include react -->
+    <script src="./node_modules/react/dist/react-with-addons.js"></script>
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div id="content">
+            <!-- this is where the root react component will get rendered -->
+        </div>
+        <!-- include the webpack-dev-server script so our scripts get reloaded when we make a change -->
+        <!-- we'll run the webpack dev server on port 8090, so make sure it is correct -->
+        <script src="http://localhost:8090/webpack-dev-server.js"></script>
+        <!-- include the bundle that contains all our scripts, produced by webpack -->
+        <!-- the bundle is served by the webpack-dev-server, so serve it also from localhost:8090 -->
+        <script type="text/javascript" src="http://localhost:8090/assets/bundle.js"></script>
+    </body>
+</html>
